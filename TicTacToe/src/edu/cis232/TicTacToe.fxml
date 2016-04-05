@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="805.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="Image00" fitHeight="234.0" fitWidth="205.0" onMousePressed="#Image00" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@white.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Image01" fitHeight="234.0" fitWidth="249.0" layoutX="195.0" onMousePressed="#Image01" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@white.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Image02" fitHeight="234.0" fitWidth="249.0" layoutX="400.0" onMousePressed="#Image02" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@white.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Image10" fitHeight="234.0" fitWidth="249.0" layoutY="234.0" onMousePressed="#Image10" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@white.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Image11" fitHeight="234.0" fitWidth="249.0" layoutX="201.0" layoutY="234.0" onMousePressed="#Image11" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@white.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Image12" fitHeight="234.0" fitWidth="249.0" layoutX="400.0" layoutY="234.0" onMousePressed="#Image12" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@white.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Image20" fitHeight="234.0" fitWidth="249.0" layoutY="468.0" onMousePressed="#Image20" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@white.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Image21" fitHeight="234.0" fitWidth="249.0" layoutX="201.0" layoutY="468.0" onMousePressed="#Image21" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@white.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Image22" fitHeight="234.0" fitWidth="249.0" layoutX="400.0" layoutY="468.0" onMousePressed="#Image22" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@white.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="LabelDisplay" layoutX="283.0" layoutY="722.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Line endX="500.0" layoutX="104.0" layoutY="234.0" startX="-100.0" strokeWidth="2.0" />
+      <Line endX="500.0" layoutX="103.0" layoutY="468.0" startX="-100.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="600.0" layoutX="305.0" layoutY="101.0" startX="-100.0" startY="-100.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="600.0" layoutX="506.0" layoutY="101.0" startX="-100.0" startY="-100.0" strokeWidth="2.0" />
+      <Line endX="500.0" layoutX="104.0" layoutY="702.0" startX="-100.0" strokeWidth="2.0" />
+      <Line endX="500.0" layoutX="104.0" startX="-100.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="600.0" layoutX="707.0" layoutY="101.0" startX="-100.0" startY="-100.0" strokeWidth="2.0" />
+      <Line endX="-100.0" endY="600.0" layoutX="102.0" layoutY="101.0" startX="-100.0" startY="-100.0" strokeWidth="2.0" />
+   </children>
+</Pane>
