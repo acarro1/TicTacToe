@@ -5,43 +5,21 @@ public class game {
 	String currentPlayer = "O";
 	boolean gameWon = true;
 	boolean gameTie = true;
-	String message;
 	Board play = new Board();
-	int i = 1;
 	
-	public void main(String[] args) {
-		// TODO Auto-generated method stub
-		do 
-		{
-			switchPlayer();
-			makeMove(getCurrentPlayer());
+	
+	public MoveResult makeMove(int row, int col){
+		if(!play.checkValid()){
+			return MoveResult.InvalidMove;
 		}
-		while (gameWon && gameTie);
-	}
-	public void makeMove(String player){
-		do{
-		message = "Please enter your move player " + player;
-		//get the input based on the image clicked
-		//pass that input back here
-		if (play.checkValid()){
-			i = 2;
-			play.setMove(player);
-			if (play.checkWinner()){
-			}
-			else{
-				message = "You have won player " + player;
-			}
-			if (play.checkTie()){
-			}
-			else{
-				message = "the game is a draw";
-			}
+		play.setMove(row, col, currentPlayer);
+		if(play.checkWinner()){
+			return MoveResult.PlayerWon;
 		}
-		else{
-			message = "Invalid Move. Choose more wisely";
+		if(play.checkTie()){
+			return MoveResult.TieGame;
 		}
-		}
-		while (i == 1);
+		return MoveResult.ValidMove;
 	}
 	
 	public void switchPlayer(){
