@@ -9,17 +9,18 @@ public class game {
 	
 	
 	public MoveResult makeMove(int row, int col){
-		if(!play.checkValid()){
+		if(!play.checkValid(row, col)){
 			return MoveResult.InvalidMove;
 		}
 		play.setMove(row, col, currentPlayer);
-		if(play.checkWinner()){
+		if(play.checkWin() != "null"){
 			return MoveResult.PlayerWon;
 		}
 		if(play.checkTie()){
 			return MoveResult.TieGame;
 		}
 		return MoveResult.ValidMove;
+		
 	}
 	
 	public void switchPlayer(){

@@ -16,12 +16,11 @@ public class MainApplication extends Application {
 
 		@Override
 		public void start(Stage stage) throws Exception {
-			FXMLLoader loader = new FXMLLoader();
-			Parent parent = loader.load(new FileInputStream("game.fxml"));
+			
+			Parent parent = FXMLLoader.load(getClass().getResource("TicTacToe.fxml"));
 
 			Scene scene = new Scene(parent);
-			game controller = loader.getController();
-			//controller.setScene(scene);
+			
 
 			stage.setTitle("Tic Tac Toe");
 			stage.setScene(scene);
