@@ -20,6 +20,8 @@ public class MainApplication extends Application {
 			Parent parent = loader.load(new FileInputStream("game.fxml"));
 
 			Scene scene = new Scene(parent);
+			game controller = loader.getController();
+			//controller.setScene(scene);
 
 			stage.setTitle("Tic Tac Toe");
 			stage.setScene(scene);
