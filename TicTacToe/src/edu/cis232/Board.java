@@ -7,8 +7,10 @@ public class Board {
 		if(gameboard[a][b] == "null"){
 		return true;
 		}
-		return false;
-	}
+		else{
+				return false;
+			}
+		}
 	public void setMove(int a, int b, String active){
 		gameboard[a][b] = active;
 	}

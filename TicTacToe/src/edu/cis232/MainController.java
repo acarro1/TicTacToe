@@ -45,9 +45,9 @@ public class MainController {
     Image x = new Image (getClass().getResource("X.jpg").toString());
     Image o = new Image (getClass().getResource("O.jpg").toString());
     @FXML
-    void Image00(ActionEvent event) {
+    void Image00() {
     	MoveResult tic = playing.makeMove(0, 0);
-    	if (tic != MoveResult.InvalidMove){
+    	if (tic == MoveResult.InvalidMove){
     		String active = playing.getCurrentPlayer();
     		if (active == "X"){
     			Image00.setImage(x);
@@ -64,15 +64,15 @@ public class MainController {
     }
 
     @FXML
-    void Image01(ActionEvent event) {
+    void Image01() {
     	MoveResult tic = playing.makeMove(0, 1);
-    	if (tic != MoveResult.InvalidMove){
+    	if (tic == MoveResult.InvalidMove){
     		String active = playing.getCurrentPlayer();
     		if (active == "X"){
-    			Image00.setImage(x);
+    			Image01.setImage(x);
     		}
     		if (active == "O"){
-    			Image00.setImage(o);
+    			Image01.setImage(o);
     		} 
         	playing.switchPlayer();
         	LabelDisplay.setText("It is your turn player" + playing.getCurrentPlayer());
@@ -83,15 +83,15 @@ public class MainController {
     }
 
     @FXML
-    void Image02(ActionEvent event) {
+    void Image02() {
     	MoveResult tic = playing.makeMove(0, 2);
     	if (tic != MoveResult.InvalidMove){
     		String active = playing.getCurrentPlayer();
     		if (active == "X"){
-    			Image00.setImage(x);
+    			Image02.setImage(x);
     		}
     		if (active == "O"){
-    			Image00.setImage(o);
+    			Image02.setImage(o);
     		} 
         	playing.switchPlayer();
         	LabelDisplay.setText("It is your turn player" + playing.getCurrentPlayer());
@@ -102,15 +102,15 @@ public class MainController {
     }
 
     @FXML
-    void Image10(ActionEvent event) {
+    void Image10() {
     	MoveResult tic = playing.makeMove(1, 0);
     	if (tic != MoveResult.InvalidMove){
     		String active = playing.getCurrentPlayer();
     		if (active == "X"){
-    			Image00.setImage(x);
+    			Image10.setImage(x);
     		}
     		if (active == "O"){
-    			Image00.setImage(o);
+    			Image10.setImage(o);
     		} 
         	playing.switchPlayer();
         	LabelDisplay.setText("It is your turn player" + playing.getCurrentPlayer());
@@ -121,15 +121,15 @@ public class MainController {
     }
 
     @FXML
-    void Image11(ActionEvent event) {
+    void Image11() {
     	MoveResult tic = playing.makeMove(1, 1);
     	if (tic != MoveResult.InvalidMove){
     		String active = playing.getCurrentPlayer();
     		if (active == "X"){
-    			Image00.setImage(x);
+    			Image11.setImage(x);
     		}
     		if (active == "O"){
-    			Image00.setImage(o);
+    			Image11.setImage(o);
     		} 
         	playing.switchPlayer();
         	LabelDisplay.setText("It is your turn player" + playing.getCurrentPlayer());
@@ -140,15 +140,15 @@ public class MainController {
     }
 
     @FXML
-    void Image12(ActionEvent event) {
+    void Image12() {
     	MoveResult tic = playing.makeMove(1, 2);
     	if (tic != MoveResult.InvalidMove){
     		String active = playing.getCurrentPlayer();
     		if (active == "X"){
-    			Image00.setImage(x);
+    			Image12.setImage(x);
     		}
     		if (active == "O"){
-    			Image00.setImage(o);
+    			Image12.setImage(o);
     		} 
         	playing.switchPlayer();
         	LabelDisplay.setText("It is your turn player" + playing.getCurrentPlayer());
@@ -159,15 +159,15 @@ public class MainController {
     }
 
     @FXML
-    void Image20(ActionEvent event) {
+    void Image20() {
     	MoveResult tic = playing.makeMove(2, 0);
     	if (tic != MoveResult.InvalidMove){
     		String active = playing.getCurrentPlayer();
     		if (active == "X"){
-    			Image00.setImage(x);
+    			Image20.setImage(x);
     		}
     		if (active == "O"){
-    			Image00.setImage(o);
+    			Image20.setImage(o);
     		} 
         	playing.switchPlayer();
         	LabelDisplay.setText("It is your turn player" + playing.getCurrentPlayer());
@@ -178,15 +178,15 @@ public class MainController {
     }
 
     @FXML
-    void Image21(ActionEvent event) {
+    void Image21() {
     	MoveResult tic = playing.makeMove(2, 1);
     	if (tic != MoveResult.InvalidMove){
     		String active = playing.getCurrentPlayer();
     		if (active == "X"){
-    			Image00.setImage(x);
+    			Image21.setImage(x);
     		}
     		if (active == "O"){
-    			Image00.setImage(o);
+    			Image21.setImage(o);
     		} 
         	playing.switchPlayer();
         	LabelDisplay.setText("It is your turn player" + playing.getCurrentPlayer());
@@ -197,15 +197,15 @@ public class MainController {
     }
 
     @FXML
-    void Image22(ActionEvent event) {
+    void Image22() {
     	MoveResult tic = playing.makeMove(2, 2);
     	if (tic != MoveResult.InvalidMove){
     		String active = playing.getCurrentPlayer();
     		if (active == "X"){
-    			Image00.setImage(x);
+    			Image22.setImage(x);
     		}
     		if (active == "O"){
-    			Image00.setImage(o);
+    			Image22.setImage(o);
     		} 
         	playing.switchPlayer();
         	LabelDisplay.setText("It is your turn player" + playing.getCurrentPlayer());
