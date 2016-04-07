@@ -4,7 +4,7 @@ public class Board {
 	String[][] gameboard = new String[3][3];
 	int counter = 0;
 	public boolean checkValid(int a, int b){
-		if(gameboard[a][b] == "null"){
+		if(gameboard[a][b] == null){
 		return true;
 		}
 		else{
@@ -76,7 +76,7 @@ public class Board {
 			String player = gameboard[0][col];
 			if(!hasNull){
 				//Check if winner
-				for(int row = 1; col < gameboard.length; row++){
+				for(int row = 1; row < gameboard.length; row++){
 					if(!player.equals(gameboard[row][col])){
 						hasDifferent = true;
 					}
@@ -116,5 +116,19 @@ public class Board {
 		}
 		return false;
 		
+	}
+	
+	public void eraseBoard(){
+		
+		gameboard[0][0]= null;
+		gameboard[0][1]= null;
+		gameboard[0][2]= null;
+		gameboard[1][0]= null;
+		gameboard[1][1]= null;
+		gameboard[1][2]= null;
+		gameboard[2][0]= null;
+		gameboard[2][1]= null;
+		gameboard[2][2]= null;
+		counter = 0;
 	}
 }

@@ -67,5 +67,6 @@
       <Line endX="500.0" layoutX="104.0" startX="-100.0" strokeWidth="2.0" />
       <Line endX="-100.0" endY="600.0" layoutX="707.0" layoutY="101.0" startX="-100.0" startY="-100.0" strokeWidth="2.0" />
       <Line endX="-100.0" endY="600.0" layoutX="102.0" layoutY="101.0" startX="-100.0" startY="-100.0" strokeWidth="2.0" />
+      <Button fx:id="buttonRestart" layoutX="530.0" layoutY="766.0" mnemonicParsing="false" onMousePressed="#buttonPressed" text="Restart" />
    </children>
 </Pane>

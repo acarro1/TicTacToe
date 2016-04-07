@@ -13,7 +13,7 @@ public class game {
 			return MoveResult.InvalidMove;
 		}
 		play.setMove(row, col, currentPlayer);
-		if(play.checkWin() != "null"){
+		if(play.checkWin() != null){
 			return MoveResult.PlayerWon;
 		}
 		if(play.checkTie()){
@@ -34,6 +34,10 @@ public class game {
 	
 	public String getCurrentPlayer(){
 		return currentPlayer;
+	}
+	public void newGame(){
+		play.eraseBoard();
+		
 	}
 
 }
